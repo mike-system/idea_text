@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!--注册事务代理工厂-->
+	<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="druidDataSource"/>
+	</bean>
+
+	<!--注册事务通知-->
+	<tx:advice transaction-manager="dataSourceTransactionManager" id="transactionInterceptor">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true"/>
+			<tx:method name="checke*" read-only="true"/>
+			<tx:method name="del*" isolation="DEFAULT" propagation="REQUIRED"/>
+		<!--	<tx:method name="*" rollback-for="Exception"/>-->
+		</tx:attributes>
+	</tx:advice>
+
+	<!--aop配置事务管理事务-->
+	<aop:config>
+		<aop:pointcut id="pointcut" expression="execution(* *..service.impl.*(..))"/>
+		<aop:advisor advice-ref="transactionInterceptor" pointcut-ref="pointcut"/>
+	</aop:config>
+</beans>

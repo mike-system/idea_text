@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.ProductMapper">
+    
+    <select id="getProductById" resultType="Product">
+        select * from easybuy_product where isDelete = #{isDelete} and id = #{id}
+    </select>
+
+    <select id="getAllProducts" parameterType="int" resultType="Product">
+        select * from easybuy_product where isDelete = #{isDelete}
+    </select>
+
+    <select id="getProductsByCategoryLevel1IdCount" resultType="int">
+        select count(*) from easybuy_product where isDelete = #{isDelete} and categoryLevel1Id = #{id}
+    </select>
+
+
+    <select id="getProductsByCategoryLevel1Id" resultType="Product">
+        select * from easybuy_product where isDelete = #{isDelete} and categoryLevel1Id = #{id} limit #{currentPage},#{rows}
+    </select>
+
+    <select id="getProductsByCategoryLevel3IdCount" resultType="int">
+        select count(*) from easybuy_product where isDelete = #{isDelete} and categoryLevel3Id = #{id}
+    </select>
+
+    <select id="getProductsByCategoryLevel3Id" resultType="Product">
+        select * from easybuy_product where isDelete = #{isDelete} and categoryLevel3Id = #{id} limit #{currentPage},#{rows}
+    </select>
+
+    <select id="getProductCountByProductCategory" resultType="int">
+        select count(*) from easybuy_product where isDelete = #{id} and categoryLevel3Id = #{flagIsDel}
+    </select>
+
+    <select id="getProductLimit" resultType="Product">
+        select * from easybuy_product where isDelete = #{isDel} limit #{start},#{rows}
+    </select>
+
+    <select id="getProductCountCount" resultType="int">
+        select count(*) from easybuy_product where isDelete = #{isDel}
+    </select>
+
+    <update id="updateProductById" parameterType="Product">
+        update easybuy_product set name = #{product.name}, description = #{product.description}, price = #{product.price}, stock = #{product.stock}, categoryLevel1Id = #{product.categoryLevel1Id}, categoryLevel2Id = #{product.categoryLevel2Id}, categoryLevel3Id = #{product.categoryLevel3Id}, fileName = #{product.fileName}, isDelete = #{product.isDelete} where id = #{product.id}
+    </update>
+
+    <insert id="addProduct" parameterType="Product">
+        insert into easybuy_product(name, description, price, stock, categoryLevel1Id, categoryLevel2Id, categoryLevel3Id, fileName, isDelete) values (${product.name},${product.description},${product.price},${product.stock},${product.categoryLevel1Id},${product.categoryLevel2Id},${product.categoryLevel3Id},${product.fileName},${product.isDelete})
+    </insert>
+
+    <update id="update2delProductById" >
+        update easybuy_product set isDelete = #{isDelete} where id = #{id}
+    </update>
+
+    <select id="getProductListBySeekCount" parameterType="string" resultType="int">
+        select count(*) from easybuy_product where name like CONCAT('%',#{val},'%')
+    </select>
+
+    <select id="getProductListBySeek" resultType="Product">
+        select * from easybuy_product where name like CONCAT('%',#{val},'%') limit #{start},#{rows}
+    </select>
+</mapper>

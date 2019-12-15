@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.PermissionMapper">
+
+    <resultMap id="permissionMapper" type="Permission">
+        <id property="pid" column="id"/>
+        <result column="pname" property="name"/>
+        <result column="purl" property="url"/>
+        <result column="ptype" property="type"/>
+        <result column="ppercode" property="percode"/>
+        <result column="pparentid" property="parent"/>
+        <collection property="roles" ofType="Role">
+            <id column="rid" property="id"/>
+            <result column="rrolename" property="roleName"/>
+        </collection>
+    </resultMap>
+
+    <!--查询角色和权限  通过角色查询权限-->
+    <select id="selectPermissionByRoleId" resultMap="permissionMapper">
+        select p.id pid,p.name pname,p.type ptype,p.url purl,p.percode ppercode,p.parentid pparentid,r.id rid,r.rolename rrolename from easybuy_permission as p join easybuy_role_permission as rp on
+        p.id = rp.pid join easybuy_role r on r.id = rp.rid where r.id =  #{roleId}
+    </select>
+
+    <!--查询到权限和角色 通过权限查询角色-->
+    <select id="selectPermissionBypermissionId" resultMap="permissionMapper">
+        select r.id rid,r.rolename rrolename, p.id pid,p.name pname,p.type ptype,p.url purl,p.percode ppercode,p.parentid pparentid from easybuy_permission as p join easybuy_role_permission as rp on
+        p.id = rp.pid join easybuy_role r on r.id = rp.rid where p.id =  #{permissionId}
+    </select>
+
+    <!--通过用户的id 获取到所有的权限-->
+    <select id="selectPermissionByUserId" resultMap="permissionMapper">
+        select ru.uid ruuid,ru.rid rurid,r.rolename rrolename  from easybuy_roles_user ru join easybuy_role r on r.id = ru.rid
+    </select>
+
+
+
+
+
+</mapper>

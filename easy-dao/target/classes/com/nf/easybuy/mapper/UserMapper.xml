@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.UserMapper">
+
+    <!--采用深度延迟加载模式-->
+    <resultMap id="userParamMapper" type="User">
+        <id column="id" property="id"/>
+        <result column="loginname" property="loginName"/>
+        <result column="userName" property="userName"/>
+        <result column="password" property="password"/>
+        <result column="sex" property="sex"/>
+        <result column="identityCode" property="identityCode"/>
+        <result column="email" property="email"/>
+        <result column="mobile" property="mobile"/>
+        <result column="type" property="type"/>
+
+        <!--通过中间表查寻到用户的角色-->
+        <collection property="roles" column="id" select="com.nf.easybuy.mapper.RoleMapper.selectRolesByUserId" ofType="Role">
+            <id column="rid" property="id"/>
+            <result column="rolename" property="roleName"/>
+        </collection>
+    </resultMap>
+
+
+    <!--用户的表的字段片段-->
+    <sql id="column">
+		id,loginname,userName,password,sex,identityCode,email,mobile,type
+	</sql>
+
+<!--    &lt;!&ndash;查询角色和权限  通过角色查询权限&ndash;&gt;
+    <select id="selectPermissionByRoleId" resultType="Permission">
+        select p.id id,p.name name,p.type type,p.url url,p.percode percode,p.parentid parentid from easybuy_permission as p join easybuy_role_permission as rp on
+        p.id = rp.pid join easybuy_role r on r.id = rp.rid where rp.rid =  #{roleId}
+    </select>-->
+
+    <select id="login" resultMap="userParamMapper">
+        select
+        <include refid="column"/>
+        from easybuy_user where
+        loginName = #{loginname} and password = #{password}
+    </select>
+
+    <select id="checkloginranme" resultType="int">
+        select count(*) c from easybuy_user where loginName = #{loginname}
+        <if test="userId != null and userId != ''">and id != #{userId}</if>
+    </select>
+
+    <select id="checkemail" resultType="int">
+        select count(*) from easybuy_user where email = #{email}
+        <if test="userId != null and userId != '' ">and id != #{userId}</if>
+    </select>
+
+    <select id="checkmobile" resultType="int">
+        select count(*) from easybuy_user where mobile = #{mobile}
+        <if test="userId != null and userId != ''">
+            and id != #{userId}
+        </if>
+    </select>
+
+    <insert id="save">
+		insert into
+		easybuy_user(loginname,password,email,mobile)
+		values(#{loginName},#{password},#{email},#{mobile})
+	</insert>
+
+    <insert id="saveByAdmin">
+        insert into
+        easybuy_user(<include refid="column"/>)
+        values(#{loginName},#{userName},#{password},#{sex},#{identityCode},#{email},#{mobile},#{type})
+    </insert>
+
+    <update id="updateByAdmin" parameterType="user">
+		update easybuy_user set
+		loginname = #{loginName}, username =#{userName}
+		,identityCode =
+		#{identityCode},email = #{email},mobile = #{mobile},type = #{type}
+		where id = #{userId}
+	</update>
+    <update id="update" parameterType="user">
+		update easybuy_user
+		set
+		userName = #{userName},email = #{email},mobile = #{mobile},
+		password = #{password} where id = #{userId}
+	</update>
+
+
+    <select id="getUserCount" resultType="int">
+		select count(*) from
+		easybuy_user
+	</select>
+
+    <select id="getUsertLimit" resultMap="userParamMapper">
+        select
+        <include refid="column"/>
+        from
+        easybuy_user limit
+        #{start},#{rows}
+    </select>
+
+    <select id="getUserById" resultMap="userParamMapper">
+        select
+        <include refid="column"/>
+        from easybuy_user where id = #{id}
+    </select>
+
+    <delete id="delUserByid">
+		delete from easybuy_user where id = #{id}
+	</delete>
+    <select id="checkIdentityCode" resultType="int">
+        select count(identityCode) from easybuy_user where
+        identityCode = #{identityCode}
+        <if test="userId != null and userId != ''">and id != #{userId}</if>
+    </select>
+
+    <select id="selectUserByUserName" resultMap="userParamMapper" parameterType="String">
+        select
+        <include refid="column"/>
+        from easybuy_user where loginname = #{username}
+    </select>
+
+</mapper>

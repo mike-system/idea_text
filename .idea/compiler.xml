@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="easydao" />
+        <module name="easy-domain" />
+        <module name="easy-service" />
+        <module name="easyservice" />
+        <module name="easycommon" />
+        <module name="easy-web" />
+        <module name="easy-solr" />
+        <module name="easyweb" />
+        <module name="easy-common" />
+        <module name="easysolr" />
+        <module name="easydomain" />
+        <module name="easy-dao" />
+        <module name="easy-spring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="easyspring" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

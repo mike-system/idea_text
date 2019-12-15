@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 注册userService-->
+	<bean id="userService" class="com.nf.easybuy.service.impl.UserServiceImpl" autowire="byType"/>
+
+	<!--注册productCategoryService-->
+	<bean id="productCategoryService" class="com.nf.easybuy.service.impl.ProductCategoryServiceImpl" autowire="byType"/>
+
+	<!--注册AddressService-->
+	<bean id="addressService" class="com.nf.easybuy.service.impl.AddressServiceImpl" autowire="byType"/>
+
+	<!--NewsServiceImpl-->
+	<bean id="newsService" class="com.nf.easybuy.service.impl.NewsServiceImpl" autowire="byType"/>
+
+	<!--OrderDetailService-->
+	<bean id="orderDetailService" class="com.nf.easybuy.service.impl.OrderDetailServiceImpl" autowire="byType"/>
+
+	<!--OrderService-->
+	<bean id="orderService" class="com.nf.easybuy.service.impl.OrderServiceImpl" autowire="byType"/>
+
+	<!--ProductServiceImpl-->
+	<bean id="productService" class="com.nf.easybuy.service.impl.ProductServiceImpl" autowire="byType"/>
+
+</beans>

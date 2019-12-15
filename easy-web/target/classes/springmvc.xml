@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:solr="http://www.springframework.org/schema/data/solr"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/data/solr
+        http://www.springframework.org/schema/data/solr/spring-solr-1.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd" default-lazy-init="true">
+
+    <mvc:annotation-driven/>
+    <!--扫描-->
+    <context:component-scan base-package="com.nf.easybuy.handler"/>
+
+    <!--开启aop对类的代理 ciglib-->
+    <aop:config proxy-target-class="true"/>
+
+    <!--拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.nf.easybuy.interceptor.InitInterceptor">
+                <property name="productCategoryService" ref="productCategoryService"/>
+            </bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/index.do"/>
+            <bean class="com.nf.easybuy.interceptor.IndexInterceptor">
+                <property name="newsService" ref="newsService"/>
+                <property name="pageNews">
+                    <bean class="com.nf.easybuy.utils.PagingUtil">
+                        <constructor-arg name="currentPageStr" value="1"/>
+                    </bean>
+                </property>
+                <property name="productService" ref="productService"/>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--
+        这里用到了 ContentNegotiatingViewResolver ，“内容协商视图解析器”，其实就是根据返回什么类型的视图，就协商使用哪种视图解析器。
+        如果返回jsp就使用InternalResourceViewResolver视图解析器，如果返回JSON格式就使用MappingJackson2JsonView来处理。如此而已。
+        在 <property name="viewResolvers"> 下的<list> 标签下，还可以加入其他的各种视图解析器的配置。
+    -->
+
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+        <property name="viewResolvers">
+            <list>
+                <!--配置内部资源视图解析器-->
+                <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                    <property name="prefix" value="/WEB-INF/jsp/"/>
+                    <property name="suffix" value=".jsp"/>
+                </bean>
+            </list>
+        </property>
+        <property name="defaultViews">
+            <list>
+                <!--json试图解析器-->
+                <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--配置内部资源视图驱动器-->
+    <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="favorParameter" value="true"/>
+        <property name="parameterName" value="format"/>
+        <property name="ignoreAcceptHeader" value="false"/>
+        <property name="mediaTypes">
+            <value>
+                json=application/json
+                xml=application/xml
+                html=text/html
+            </value>
+        </property>
+    </bean>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <aop:config proxy-target-class="true"/>
+
+
+    <!--异常处理器-->
+    <!-- <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="/errors/error.jsp"/>
+        <property name="exceptionAttribute" value="ex"/>
+		<property name="exceptionMappings">
+			<props>
+				<prop key=""></prop>
+			</props>
+		</property>
+    </bean>-->
+
+
+    <!--    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor"/>
+
+
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>-->
+
+
+    <!--<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor" />
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor">
+        <property name="proxyTargetClass" value="true"/>
+    </bean>-->
+    <!--开启shiro注解支持-->
+    <!--  <bean id="authorizationAttributeSourceAdvisor" class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>-->
+
+
+
+
+</beans>

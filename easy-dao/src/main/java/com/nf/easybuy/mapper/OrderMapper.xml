@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.OrderMapper">
+    <!--delOrderByIdAndUserId 删除，织入事务
+        String sql2 = "delete from easybuy_order_detail where orderid = ?";
+    -->
+    <delete id="delOrderByIdAndUserId">
+        delete from easybuy_order where id = #{orderId} and userid = #{userId}
+    </delete>
+
+    <insert id="saveOrder" useGeneratedKeys="true" keyProperty="id" keyColumn="id" parameterType="order">
+        insert into easybuy_order(userid,loginName,userAddress,createTime,cost,serialNumber,status) values(#{userid}, #{loginname},
+					#{userAddress}, #{createTime}, #{cost}, #{serialNumber},#{status})
+    </insert>
+
+    <update id="updateById">
+        update easybuy_order set userAddress = #{addr}, status = #{status} where id = #{orderId}
+    </update>
+
+    <select id="getOrderById" resultType="Order">
+        select id,userId,loginName,userAddress,createTime,cost,serialNumber,status from easybuy_order where id = #{orderId}
+    </select>
+
+    <select id="getAllOrderByUserIdAndStatus" resultType="Order">
+        select id,userid,loginname,useraddress,createtime,cost,serialNumber,status from easybuy_order where userid = #{userId} and status = #{value}
+    </select>
+
+    <select id="getOrderByUserIdAndOderNumAndOrderStatu" resultType="Order">
+        select id,userid,loginname,useraddress,createtime,cost,serialNumber,status from easybuy_order where userid = #{userId} and serialNumber = #{val1} and status = #{status}
+    </select>
+
+    <select id="getAllOrderByUserIdAndOrderStatusCount" resultType="int">
+        select count(*) from easybuy_order where userid = #{userId}
+        <if test="status != 8">
+            and status = #{status}
+        </if>
+    </select>
+
+    <select id="getAllOrderByUserIdAndOrderStatus" resultType="Order">
+        select id,userid,loginname,useraddress,createtime,cost,serialNumber,status from easybuy_order where userid = #{userId}
+        <choose>
+            <when test="status != 8">
+                and status = #{status} limit #{start},#{rows}
+            </when>
+            <otherwise>
+                limit #{start},#{rows}
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="getAllOrderCount" resultType="int">
+        select count(*) from easybuy_order
+    </select>
+
+    <select id="getOrderList" resultType="Order">
+        select id,userid,loginname,useraddress,createtime,cost,serialNumber,status from easybuy_order limit #{start},#{rows}
+    </select>
+
+    <!--捆绑事务
+        	String sql2 = "delete from easybuy_order_detail where orderid = ?";
+    -->
+    <select id="delOrderByIdAndAdmin" resultType="int" parameterType="int">
+        delete from easybuy_order where id = #{orderId}
+    </select>
+
+    <update id="sendOrderById">
+        update easybuy_order set status = #{status} where id =#{orderId}
+    </update>
+</mapper>

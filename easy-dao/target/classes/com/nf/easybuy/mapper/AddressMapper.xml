@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.AddressMapper">
+    <select id="getAddressByUserid" parameterType="int" resultType="Address">
+        select id, userId, address, createTime, isDefault, remark
+        from easybuy_user_address
+        where userid = #{id}
+    </select>
+
+    <select id="getAddressById" parameterType="int" resultType="Address">
+
+        select id, userId, address, createTime, isDefault, remark
+        from easybuy_user_address
+        where id = #{id}
+
+    </select>
+
+    <select id="getAreaByParentId" parameterType="int" resultType="Area">
+        select areaId, parentId, type, name
+        from area
+        where parentid = #{parentid}
+    </select>
+
+    <update id="update">
+        update easybuy_user_address
+        set address = #{addr.address},
+            remark  = #{addr.remark}
+        where id = #{addressId}
+    </update>
+
+    <insert id="add">
+        insert into easybuy_user_address(userId, address, createTime, remark)
+        values (#{userId}, #{addr.address}, now(), #{addr.remark})
+    </insert>
+
+    <select id="getAreaById" parameterType="string" resultType="string">
+        select name
+        from area
+        where areaId = #{id}
+    </select>
+
+
+    <!--设置所有的地址的默认值都是为0-->
+    <insert id="updateAllAddressDefaultValueAsZero">
+        update easybuy_user_address set isDefault = 0
+    </insert>
+
+    <!--更新默认地址-->
+    <insert id="updateDefaultAddressById" parameterType="int">
+        update easybuy_user_address set isDefault = 1 where id = ?
+    </insert>
+
+
+    <!--delAddr-->
+    <delete id="delAddr" parameterType="int">
+        delete
+        from easybuy_user_address
+        where id = #{addrId}
+    </delete>
+
+    <!--getAddressByUserId-->
+    <select id="getAddressByUserId" resultType="Address" parameterType="int">
+        select id, userId, address, createTime, isDefault, remark
+        from easybuy_user_address
+        where userId = #{id}
+    </select>
+
+</mapper>

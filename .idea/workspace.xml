@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="easy-web:war" />
+      <artifact name="easy-web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dbf5f4b-77c5-4408-9055-d3f71087218e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/easy-common/target/" />
+    <ignored path="$PROJECT_DIR$/easy-base/target/" />
+    <ignored path="$PROJECT_DIR$/easy-domain/target/" />
+    <ignored path="$PROJECT_DIR$/easy-solr/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/easy-web/target/" />
+    <ignored path="$PROJECT_DIR$/easy-spring/target/" />
+    <ignored path="$PROJECT_DIR$/easy-dao/target/" />
+    <ignored path="$PROJECT_DIR$/easy-service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="easybuy">
+      <favorite_root url="file://$PROJECT_DIR$/easy-spring" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/easy-spring/src" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main/java" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main/java/com" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main/java/com/nf" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main/java/com/nf/easybuy" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/main/java/com/nf/easybuy/App.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test/java" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test/java/com" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test/java/com/nf" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test/java/com/nf/easybuy" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/easy-spring/src/test/java/com/nf/easybuy/AppTest.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/easy-spring/target" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/easy-spring/target/generated-sources" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/easy-spring/target/generated-sources/annotations" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/easy-spring/target/generated-test-sources" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/easy-spring/target/generated-test-sources/test-annotations" module="easybuy" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/easy-spring/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/easy-spring/easyspring.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/easy-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-spring/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8800">
+              <caret line="400" selection-start-line="400" selection-end-line="400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-base/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8866">
+              <caret line="403" selection-start-line="17" selection-start-column="4" selection-end-line="403" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-dao/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8778">
+              <caret line="399" selection-start-line="399" selection-end-line="399" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-domain/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8800">
+              <caret line="400" selection-start-line="400" selection-end-line="400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8800">
+              <caret line="400" selection-start-line="400" selection-end-line="400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/easy-solr/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8800">
+              <caret line="400" selection-start-line="400" selection-end-line="400" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="mapper.xml" />
+        <option value="Jsp File" />
+        <option value="spring.xml" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/RoleMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/webapp/WEB-INF/jsp/Member.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/resources/spring/applicationContext-shiro.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/OrderMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/webapp/css/style.css" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/resources/springmvc.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/AdminController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/PermissionMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/OrderController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/NewsController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/AddressMapper.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/UserController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/AddressController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/easy-solr/src/main/java/com/nf/easybuy/solr/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/easy-base/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-service/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-solr/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/easy-web/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\repository" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="easy-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="580" />
+    <option name="y" value="4" />
+    <option name="width" value="1482" />
+    <option name="height" value="984" />
+  </component>
+  <component name="ProjectId" id="1T2qfSIMnErwseLPDa64xg9Fify" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="easybuy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="easybuy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46422338" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/easy-spring/pom.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Java\myIdea\easybuy\" />
+      <recent name="G:\Java\myIdea\easybuy\easy-web\src\main\resources\spring" />
+      <recent name="G:\Java\myIdea\easybuy\easy-web\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nf.easybuy" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Java\myIdea\easybuy\easy-solr\src\main\java" />
+      <recent name="G:\Java\myIdea\easybuy\easy-solr\src\main\resources\spring" />
+      <recent name="G:\Java\myIdea\easybuy\easy-web\src\main\resources" />
+      <recent name="G:\Java\myIdea\easybuy\easy-web\src\main\webapp\WEB-INF\jsp" />
+      <recent name="G:\Java\myIdea\easybuy\easy-web\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nf.easybuy.solr.dao.impl" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nf.easybuy.exception" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.401" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.401" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/easy/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="easy-web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/easy_web_war" />
+          </settings>
+        </artifact>
+        <artifact name="easy-web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/easy_web_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_40_(1)_easybuy" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="easy-web:war" />
+          <artifact name="easy-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/easy/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="easy-web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/easy_web_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_easybuy" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="easy-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2091" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.20628415" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dbf5f4b-77c5-4408-9055-d3f71087218e" name="Default Changelist" comment="" />
+      <created>1572668640695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572668640695</updated>
+      <workItem from="1572668643913" duration="22884000" />
+      <workItem from="1572762493136" duration="69000" />
+      <workItem from="1572849698355" duration="7056000" />
+      <workItem from="1572946895900" duration="7114000" />
+      <workItem from="1572966125734" duration="3144000" />
+      <workItem from="1573022937527" duration="13232000" />
+      <workItem from="1573048658030" duration="14898000" />
+      <workItem from="1573099248522" duration="10614000" />
+      <workItem from="1573121153954" duration="16887000" />
+      <workItem from="1573192068404" duration="29986000" />
+      <workItem from="1573273829926" duration="27197000" />
+      <workItem from="1573346197068" duration="6277000" />
+      <workItem from="1573460852283" duration="18967000" />
+      <workItem from="1573518716961" duration="1177000" />
+      <workItem from="1573530189394" duration="834000" />
+      <workItem from="1573532030675" duration="12631000" />
+      <workItem from="1573553829984" duration="1311000" />
+      <workItem from="1573579034553" duration="837000" />
+      <workItem from="1573606559547" duration="26642000" />
+      <workItem from="1573638215592" duration="6561000" />
+      <workItem from="1573650934925" duration="7816000" />
+      <workItem from="1573692733373" duration="15491000" />
+      <workItem from="1573736335723" duration="11001000" />
+      <workItem from="1573777682606" duration="5647000" />
+      <workItem from="1573793743401" duration="13896000" />
+      <workItem from="1573807820366" duration="7862000" />
+      <workItem from="1573824103571" duration="11925000" />
+      <workItem from="1573877132638" duration="950000" />
+      <workItem from="1573886472931" duration="207000" />
+      <workItem from="1573897335003" duration="1190000" />
+      <workItem from="1573970257146" duration="174000" />
+      <workItem from="1574870036455" duration="1786000" />
+      <workItem from="1575194055319" duration="186000" />
+      <workItem from="1575598211363" duration="3649000" />
+      <workItem from="1575967668184" duration="869000" />
+      <workItem from="1576034316814" duration="2131000" />
+      <workItem from="1576374927120" duration="7157000" />
+      <workItem from="1576414404190" duration="2261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9418000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="572" y="21" width="988" height="656" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3376344" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.09259259" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.27741936" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="344" y="49" key="#AppTest.test02" timestamp="1575598720016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="344" y="49" key="#AppTest.test02/0.0.1536.824@0.0.1536.824" timestamp="1575598720016" />
+    <state x="595" y="244" key="#BuildArtifactsBeforeRunChooser" timestamp="1575600907108">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="595" y="244" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1575600907108" />
+    <state x="255" y="151" width="992" height="582" key="#Project_Structure" timestamp="1575601255135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="255" y="151" width="992" height="582" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1575601255135" />
+    <state x="270" y="77" width="1089" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575601875875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="77" width="1089" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575601875875" />
+    <state x="595" y="194" key="FileChooserDialogImpl" timestamp="1575599950742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="595" y="194" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575599950742" />
+    <state width="908" height="326" key="GridCell.Tab.0.bottom" timestamp="1575601881075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601881075" />
+    <state width="908" height="326" key="GridCell.Tab.0.center" timestamp="1575601881075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575601881075" />
+    <state width="908" height="326" key="GridCell.Tab.0.left" timestamp="1575601881075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575601881075" />
+    <state width="908" height="326" key="GridCell.Tab.0.right" timestamp="1575601881075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575601881075" />
+    <state width="908" height="326" key="GridCell.Tab.1.bottom" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.1.center" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.1.left" timestamp="1575601881075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575601881075" />
+    <state width="908" height="326" key="GridCell.Tab.1.right" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="1161" height="384" key="GridCell.Tab.10.bottom" timestamp="1575601017951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="384" key="GridCell.Tab.10.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601017951" />
+    <state width="1161" height="384" key="GridCell.Tab.10.center" timestamp="1575601017950">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="384" key="GridCell.Tab.10.center/0.0.1536.824@0.0.1536.824" timestamp="1575601017950" />
+    <state width="1161" height="384" key="GridCell.Tab.10.left" timestamp="1575601017950">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="384" key="GridCell.Tab.10.left/0.0.1536.824@0.0.1536.824" timestamp="1575601017950" />
+    <state width="1161" height="384" key="GridCell.Tab.10.right" timestamp="1575601017951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="384" key="GridCell.Tab.10.right/0.0.1536.824@0.0.1536.824" timestamp="1575601017951" />
+    <state width="1161" height="386" key="GridCell.Tab.11.bottom" timestamp="1575601001408">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="386" key="GridCell.Tab.11.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601001408" />
+    <state width="1161" height="386" key="GridCell.Tab.11.center" timestamp="1575601001408">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="386" key="GridCell.Tab.11.center/0.0.1536.824@0.0.1536.824" timestamp="1575601001408" />
+    <state width="1161" height="386" key="GridCell.Tab.11.left" timestamp="1575601001408">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="386" key="GridCell.Tab.11.left/0.0.1536.824@0.0.1536.824" timestamp="1575601001408" />
+    <state width="1161" height="386" key="GridCell.Tab.11.right" timestamp="1575601001408">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="386" key="GridCell.Tab.11.right/0.0.1536.824@0.0.1536.824" timestamp="1575601001408" />
+    <state width="908" height="326" key="GridCell.Tab.2.bottom" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.2.center" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.2.left" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.2.right" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.3.bottom" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.3.center" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.3.left" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="908" height="326" key="GridCell.Tab.3.right" timestamp="1575601881076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="908" height="326" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1575601881076" />
+    <state width="1161" height="326" key="GridCell.Tab.5.bottom" timestamp="1575601329834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.5.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601329834" />
+    <state width="1161" height="326" key="GridCell.Tab.5.center" timestamp="1575601329834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.5.center/0.0.1536.824@0.0.1536.824" timestamp="1575601329834" />
+    <state width="1161" height="326" key="GridCell.Tab.5.left" timestamp="1575601329834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.5.left/0.0.1536.824@0.0.1536.824" timestamp="1575601329834" />
+    <state width="1161" height="326" key="GridCell.Tab.5.right" timestamp="1575601329834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.5.right/0.0.1536.824@0.0.1536.824" timestamp="1575601329834" />
+    <state width="1161" height="326" key="GridCell.Tab.6.bottom" timestamp="1575601337146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.6.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575601337146" />
+    <state width="1161" height="326" key="GridCell.Tab.6.center" timestamp="1575601337146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.6.center/0.0.1536.824@0.0.1536.824" timestamp="1575601337146" />
+    <state width="1161" height="326" key="GridCell.Tab.6.left" timestamp="1575601337146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.6.left/0.0.1536.824@0.0.1536.824" timestamp="1575601337146" />
+    <state width="1161" height="326" key="GridCell.Tab.6.right" timestamp="1575601337146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1161" height="326" key="GridCell.Tab.6.right/0.0.1536.824@0.0.1536.824" timestamp="1575601337146" />
+    <state x="178" y="44" key="new project wizard" timestamp="1575598680070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="44" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1575598680070" />
+    <state x="445" y="95" key="spring file set editor" timestamp="1575600360510">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="445" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1575600360510" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/easy-web/src/main/java/com/nf/easybuy/handler/ProductController.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="addressMapper" language="JAVA" />
+        <watch expression="addressMapper" language="JAVA" />
+        <watch expression="addressMapper" language="JAVA" />
+        <watch expression="exceptionClassName" />
+        <watch expression="username" />
+        <watch expression="searchProductByQuery" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/AccountRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/AreaRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/CarIsNullRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/CustomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/DatabaseDataRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/IllegalUserRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/NotFindOrderRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/NullFileRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/PageRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/TypeMatchingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/exception/NullPasswordRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/utils/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/utils/PagingUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/utils/UUIDForId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/src/main/java/com/nf/easybuy/utils/WebUtilsl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/AddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-dao/src/main/java/com/nf/easybuy/mapper/AddressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-spring/src/main/java/com/nf/easybuy/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-solr/src/main/java/com/nf/easybuy/solr/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-spring/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8800">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8866">
+          <caret line="403" selection-start-line="17" selection-start-column="4" selection-end-line="403" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8778">
+          <caret line="399" selection-start-line="399" selection-end-line="399" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8800">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8800">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easy-solr/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8800">
+          <caret line="400" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

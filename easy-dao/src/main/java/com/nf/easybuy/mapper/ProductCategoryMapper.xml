@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.easybuy.mapper.ProductCategoryMapper">
+
+    <resultMap id="productCategoryMapper" type="ProductCategory">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result column="parentId" property="parentId"/>
+        <result column="type" property="type"/>
+        <result column="iconClass" property="iconClass"/>
+    </resultMap>
+
+    <select id="getProductCategory" resultMap="productCategoryMapper">
+        select id,name,parentid,type,iconClass from easybuy_product_category
+    </select>
+
+    <select id="getProductCategoryByTypeAndParentid" resultMap="productCategoryMapper">
+        select id,name,parentid,type,iconClass from easybuy_product_category where type =  #{type} and parentid = #{parentid}
+    </select>
+
+    <select id="getProductCategoryCount" resultType="int">
+        select count(*) from easybuy_product_category
+    </select>
+
+    <select id="getProductCategoryLimit" resultMap="productCategoryMapper">
+        select * from easybuy_product_category limit #{start},#{start}
+    </select>
+
+    <select id="getProductCategoryById" resultType="ProductCategory" parameterType="int">
+        select * from easybuy_product_category where id = #{id}
+    </select>
+
+    <update id="updateProductCategoryById" parameterType="ProductCategory">
+        update easybuy_product_category set name = #{pc.name},parentId = #{pc.parentId},iconClass = #{pc.iconClass} where id = #{pc.id}
+    </update>
+
+    <insert id="saveProductCategory">
+        insert into easybuy_product_category(name,parentId,type,iconClass) values(#{pc.name},#{pc.parentId},#{pc.type},#{pc.iconClass})
+    </insert>
+
+    <delete id="delProductCatById" parameterType="int">
+        delete from easybuy_product_category where id = #{id}
+    </delete>
+
+    <select id="getProductCategoryCountByParentId" parameterType="int" resultType="int">
+        select count(*) from easybuy_product_category where parentId = #{parentId}
+    </select>
+
+    <select id="getProductCategoryByName" resultType="int" parameterType="string">
+        select count(*) from easybuy_product_category where name = #{name}
+    </select>
+
+</mapper>
